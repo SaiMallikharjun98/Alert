@@ -16,7 +16,7 @@ function Alert() {
             interactively.
           </p>
           <div className="relative">
-          {alertStatus ? <div className="absolute left-30 bottom-20 text-sm rounded-lg  border-gray-200 border-[0.5px] "> 🚨 Show Warning </div> : ""}
+          {alertStatus ? <div className="absolute left-70 bottom-20 text-xl rounded-lg  border-gray-200 border-[0.5px] "> 🚨 Show Warning </div> : ""}
           </div>
           <button onClick={alertHandler}>
             {alertStatus ? (
