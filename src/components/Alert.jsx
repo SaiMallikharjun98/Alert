@@ -9,7 +9,7 @@ function Alert() {
     <>
       <div className="mx-auto max-w-md">
         <div className="px-5 py-10">
-          <h1 className="text-3xl font-bold ">This is an Simple Alert app</h1>
+          <h1 className="text-3xl font-bold pb-2">This is an Simple Alert app</h1>
           <p className="tet-2xl">
             The Alert App is a simple React application that demonstrates the
             use of React's useState hook for managing component state
