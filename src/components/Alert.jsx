@@ -15,21 +15,28 @@ function Alert() {
             use of React's useState hook for managing component state
             interactively.
           </p>
-          <div className="relative">
-          {alertStatus ? <div className="absolute left-70 bottom-20 text-xl rounded-lg  border-gray-200 border-[0.5px] "> 🚨 Show Warning </div> : ""}
-          </div>
-          <button onClick={alertHandler}>
-            {alertStatus ? (
-              <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer mt-8 p-6">
-                Hide Alert
-              </div>
-            ) : (
-              <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer mt-8 p-6">
-                Show Alert
-              </div>
-            )}
-          </button>
         </div>
+        <div className="relative">
+          {alertStatus ? (
+            <div className="absolute left-70 bottom-20 text-xl rounded-lg  border-gray-200 border-[0.5px] ">
+              {" "}
+              🚨 Show Warning{" "}
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
+        <button onClick={alertHandler}>
+          {alertStatus ? (
+            <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer mt-8 p-6">
+              Hide Alert
+            </div>
+          ) : (
+            <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer mt-8 p-6">
+              Show Alert
+            </div>
+          )}
+        </button>
       </div>
     </>
   );
