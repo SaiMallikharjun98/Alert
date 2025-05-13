@@ -18,27 +18,29 @@ function Alert() {
             interactively.
           </p>
         </div>
+        <div className="mt-1">
+          <button onClick={alertHandler}>
+            {alertStatus ? (
+              <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer p-5">
+                Hide Alert
+              </div>
+            ) : (
+              <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer p-5">
+                Show Alert
+              </div>
+            )}
+          </button>
+        </div>
 
-        <button onClick={alertHandler}>
+        <div className="relative">
           {alertStatus ? (
-            <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer p-5">
-              Hide Alert
+            <div className="w-[200px] absolute left-120 bottom-80 text-xl rounded-lg  border-gray-200 border-[0.5px] p-2 ">
+              🚨 Show Warning
             </div>
           ) : (
-            <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer p-5">
-              Show Alert
-            </div>
+            ""
           )}
-        </button>
-      </div>
-      <div className="relative">
-        {alertStatus ? (
-          <div className="w-[200px] absolute left-120 bottom-20 text-xl rounded-lg  border-gray-200 border-[0.5px] p-2 ">
-            🚨 Show Warning
-          </div>
-        ) : (
-          ""
-        )}
+        </div>
       </div>
     </>
   );
