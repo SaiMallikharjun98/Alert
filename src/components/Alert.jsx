@@ -26,13 +26,13 @@ function Alert() {
             ""
           )}
         </div>
-        <button onClick={alertHandler} className="mt-3">
+        <button onClick={alertHandler} className="mt-1">
           {alertStatus ? (
-            <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer p-3">
+            <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer p-5">
               Hide Alert
             </div>
           ) : (
-            <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer p-3">
+            <div className="text-2xl bg-violet-300 hover:bg-violet-700 text-white cursor-pointer p-5">
               Show Alert
             </div>
           )}
