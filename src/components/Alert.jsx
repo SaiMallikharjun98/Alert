@@ -18,7 +18,7 @@ function Alert() {
         </div>
         <div className="relative">
           {alertStatus ? (
-            <div className="w-fit absolute left-120 bottom-20 text-xl rounded-lg  border-gray-200 border-[0.5px] ">
+            <div className="w-full absolute left-120 bottom-20 text-xl rounded-lg  border-gray-200 border-[0.5px] ">
               
               🚨 Show Warning
             </div>
