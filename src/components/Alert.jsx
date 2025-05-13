@@ -9,7 +9,7 @@ function Alert() {
     <>
       <div className="mx-auto max-w-md">
         <div className="px-5 py-20">
-          <h1 className="text-3xl font-bold pb-2">
+          <h1 className="text-3xl font-bold pb-4">
             This is an Simple Alert app
           </h1>
           <p className="tet-2xl">
