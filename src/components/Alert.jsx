@@ -30,15 +30,15 @@ function Alert() {
             </div>
           )}
         </button>
-        <div className="relative">
-          {alertStatus ? (
-            <div className="w-[200px] absolute left-120 bottom-20 text-xl rounded-lg  border-gray-200 border-[0.5px] p-2 ">
-              🚨 Show Warning
-            </div>
-          ) : (
-            ""
-          )}
-        </div>
+      </div>
+      <div className="relative">
+        {alertStatus ? (
+          <div className="w-[200px] absolute left-120 bottom-20 text-xl rounded-lg  border-gray-200 border-[0.5px] p-2 ">
+            🚨 Show Warning
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </>
   );
