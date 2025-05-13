@@ -8,7 +8,7 @@ function Alert() {
   return (
     <>
       <div className="mx-auto max-w-md">
-        <div className="px-8 py-10">
+        <div className="px-5 py-10">
           <h1 className="text-3xl font-bold ">This is an Simple Alert app</h1>
           <p className="tet-2xl">
             The Alert App is a simple React application that demonstrates the
